@@ -1,0 +1,30 @@
+<?php
+if ($_POST) {
+    $a = $_POST['a'];
+    $b = $_POST['b'];
+    if ($a % 2 || $b % 2) {
+        echo "Qiymatlar to'ri kiritildi a= " . $a . " b=" . $b;
+    } else {
+        echo "A va B hech bo‘lmaganda bittasi toq. a= " . $a . " b=" . $b;
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="9.php" method="POST">
+        <input type="number" , placeholder="a" name='a'>
+        <input type="number" , placeholder="b" name='b'>
+        <button type="submit">ok </button>
+    </form>
+</body>
+
+</html>
