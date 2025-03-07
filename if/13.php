@@ -5,7 +5,7 @@ if ($_POST) {
     $c = (int) $_POST['c'];
 
     $minv = 0;
-    if (($a >= $b && $b >= $c) || $c >= $b && $b >= $a) {
+    if (($a >= $b && $b >= $c) || ($c >= $b && $b >= $a)) {
         $minv = $b;
     } else if (($a <= $b && $a >= $c) || ($b <= $a && $c >= $a)) {
         $minv = $a;

@@ -12,14 +12,26 @@ if ($_POST) {
             $maxv = $a;
         } else {
             $minv = $a;
-            $maxv = $b;
+            $maxv = $c;
         }
     } else if (($a <= $b && $a >= $c) || ($b <= $a && $c >= $a)) {
-        $minv = $a;
+        if ($b > $c) {
+            $minv = $c;
+            $maxv = $b;
+        } else {
+            $minv = $a;
+            $maxv = $c;
+        }
     } else {
-        $minv = $c;
+        if ($a > $b) {
+            $minv = $b;
+            $maxv = $a;
+        } else {
+            $minv = $a;
+            $maxv = $b;
+        }
     }
-    echo "natija  " . $minv;
+    echo "natija  max= " . $maxv . " min= " . $minv;
 }
 ?>
 
