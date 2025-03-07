@@ -11,7 +11,7 @@
     <h1>
         10–40 oralig‘idagi butun son berilgan, bu o‘quv mashqlarining sonini bildiradi. Ushbu sonni to‘g‘ri mos keluvchi so‘z bilan chiqarish (masalan, 18 — «o‘n sakkiz o‘quv mashg‘uloti», 23 — «yigirma uchta o‘quv mashg‘uloti»).
     </h1>
-    <form action="16.php" method="POST">
+    <form action="17.php" method="POST">
         <input type="number" , placeholder="yosh kitiring" name='a'>
         <button type="submit">ok </button>
     </form>
