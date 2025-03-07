@@ -8,7 +8,9 @@ if ($_POST) {
         echo "natija a " .  $a . "  b " . $b;
     } else {
         $c = $b + $a;
-        echo "natija  " .  $a . " + " . $b . " = " . $c;
+        $a = $c;
+        $b = $c;
+        echo "natija  a" . $a   . "b = " . $b;
     }
 }
 ?>

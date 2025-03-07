@@ -38,25 +38,51 @@ if ($_POST) {
         die("harakatni 1 to'g'ri kiriting");
     }
 
+
     switch ($y) {
         case "N":
             switch ($h) {
                 case 1:
                     switch ($h2) {
                         case 1:
-
+                            echo "Shimol ga";
                             break;
                         case -1:
+                            echo "Janub ga";
                             break;
                         case 2:
+                            echo "G'arpga ga";
                             break;
                     }
-                    echo "Sharq ga";
                     break;
                 case -1:
+                    switch ($h2) {
+                        case 1:
+                            echo "Janub ga";
+                            break;
+                        case -1:
+                            echo "Shimol ga";
+                            break;
+                        case 2:
+                            echo "Sharq ga";
+                            break;
+                    }
+
                     echo "G'arpga";
                     break;
                 case 2:
+                    switch ($h2) {
+                        case 1:
+                            echo "Sharq ga";
+                            break;
+                        case -1:
+                            echo "G'arpga";
+                            break;
+                        case 2:
+                            echo "Shimol ga";
+                            break;
+                    }
+
                     echo "Shimol ga";
                     break;
             }
@@ -64,26 +90,89 @@ if ($_POST) {
         case "W":
             switch ($h) {
                 case 1:
-                    echo "Janub ga";
+                    switch ($h2) {
+                        case 1:
+                            echo "Sharq ga";
+                            break;
+                        case -1:
+                            echo "G'arpga";
+                            break;
+                        case 2:
+                            echo "Shimol ga";
+                            break;
+                    }
                     break;
                 case -1:
-                    echo "Shimol ga";
+                    switch ($h2) {
+                        case 1:
+                            echo "G'arpga";
+                            break;
+                        case -1:
+                            echo "Sharq ga";
+                            break;
+                        case 2:
+                            echo "Janub ga";
+                            break;
+                    }
                     break;
                 case 2:
-                    echo "G'arpga";
+                    switch ($h2) {
+                        case 1:
+                            echo "Shimol ga";
+                            break;
+                        case -1:
+                            echo "Janub ga";
+                            break;
+                        case 2:
+                            echo "G'arp ga";
+                            break;
+                    }
                     break;
             }
             break;
         case "S":
             switch ($h) {
                 case 1:
-                    echo "Sharq ga";
+                    switch ($h2) {
+                        case 1:
+                            echo "Shimol ga";
+                            break;
+                        case -1:
+                            echo "Janub ga";
+                            break;
+                        case 2:
+                            echo "Janub ga";
+                            break;
+                    }
                     break;
                 case -1:
+                    switch ($h2) {
+                        case 1:
+                            echo "Shimol ga";
+                            break;
+                        case -1:
+                            echo "Janub ga";
+                            break;
+                        case 2:
+                            echo "Sharq ga";
+                            break;
+                    }
+                    break;
+
                     echo "G'arpga";
                     break;
                 case 2:
-                    echo "Janub ga";
+                    switch ($h2) {
+                        case 1:
+                            echo "g'arpga ga";
+                            break;
+                        case -1:
+                            echo "shaqrga ga";
+                            break;
+                        case 2:
+                            echo "Shimol ga";
+                            break;
+                    }
                     break;
             }
             echo "Janub";
@@ -91,13 +180,45 @@ if ($_POST) {
         case "E":
             switch ($h) {
                 case 1:
-                    echo "Shimol ga";
+                    switch ($h2) {
+                        case 1:
+                            echo "g'arpga ga";
+                            break;
+                        case -1:
+                            echo "shaqrga ga";
+                            break;
+                        case 2:
+                            echo "Janubga ga";
+                            break;
+                    }
                     break;
                 case -1:
-                    echo "Janub ga";
+                    switch ($h2) {
+                        case 1:
+                            echo "Shaqrq ga";
+                            break;
+                        case -1:
+                            echo "G'arp ga";
+                            break;
+                        case 2:
+                            echo "Shimol ga";
+                            break;
+                    }
                     break;
                 case 2:
-                    echo "Sharq ga";
+                    switch ($h2) {
+                        case 1:
+                            echo "G'arp ga";
+                            break;
+                        case -1:
+                            echo "Shimol ga";
+
+                            break;
+                        case 2:
+                            echo "Sharq ga";
+
+                            break;
+                    }
                     break;
             }
             break;
