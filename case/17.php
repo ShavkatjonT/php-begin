@@ -12,7 +12,7 @@
         10–40 oralig‘idagi butun son berilgan, bu o‘quv mashqlarining sonini bildiradi. Ushbu sonni to‘g‘ri mos keluvchi so‘z bilan chiqarish (masalan, 18 — «o‘n sakkiz o‘quv mashg‘uloti», 23 — «yigirma uchta o‘quv mashg‘uloti»).
     </h1>
     <form action="17.php" method="POST">
-        <input type="number" , placeholder="yosh kitiring" name='a'>
+        <input type="number" , placeholder="qiymatni kitiring" name='a'>
         <button type="submit">ok </button>
     </form>
 </body>
@@ -25,7 +25,7 @@ if ($_POST) {
     $ar = (int) $_POST['a'];
 
     if ($ar < 10 || 40 < $ar) {
-        die("Yosh 20 dan 69 ga cha oraliqda bo'lishi kerak");
+        die("10 dan 40 ga cha oraliqda bo'lishi kerak");
     }
     $num = ($ar - ($ar % 10)) / 10;
     $num2 = $ar % 10;
@@ -33,7 +33,7 @@ if ($_POST) {
     $a = '';
     $b = '';
     switch ($num) {
-        case 2:
+        case 1:
             $a = "O'n";
             break;
         case 2:
@@ -47,6 +47,7 @@ if ($_POST) {
             break;
         default:
             $a = "xato";
+            break;
     }
 
     switch ($num2) {
@@ -81,7 +82,7 @@ if ($_POST) {
             $b = "";
     }
 
-    echo $a . " " . $b . " yosh";
+    echo $a . " " . $b . " o‘quv mashg‘uloti";
 }
 
 
